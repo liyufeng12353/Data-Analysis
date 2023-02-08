@@ -1,0 +1,28 @@
+import matplotlib.pyplot as plt
+
+# Define the data
+years = [2018, 2019, 2020, 2021, 2022, 2025, 2030, 2035]
+nev = [22.5, 120.6, 136.7, 352.1, 688.7, 1150, 1450, 1650]
+nev_penetration = [0.8, 4.7, 5.4, 13.4, 25.6, 41.1, 48.3, 53.2]
+fcev = [0.3, 0.1, 0.2, 0.3, 5.0, 8.0, 15.0, 0]
+phv = [23.2, 25.1, 60.3, 151.8, 252.5, 318.0, 360.6, 0]
+bev = [97.2, 111.5, 291.6, 536.5, 897.5, 1132.0, 1289.4, 0]
+ice = [2785.6, 2456.3, 2394.4, 2275.4, 1997.7, 1650, 1550, 1450]
+
+# Plot the chart
+plt.bar(years, nev, label='NEV')
+plt.bar(years, nev_penetration, label='NEV Penetration Rate')
+plt.bar(years, fcev, label='FCEV')
+plt.bar(years, phv, label='PHEV')
+plt.bar(years, bev, label='BEV')
+plt.bar(years, ice, label='ICE')
+
+# Add labels and title
+plt.xlabel('Year')
+plt.ylabel('Sales (in thousands)')
+plt.title('Automotive Sales')
+plt.legend()
+
+# Show the chart
+plt.show()
+ 
